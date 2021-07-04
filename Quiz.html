@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<style>
+.joe {
+ max-width: 300px;
+ max-height: 300px;
+}
+.korea {
+	max-width: 300px;
+}
+.share {
+	max-width: 300px;
+}
+
+
+.gg{
+background-color: gold;
+}
+
+.top{
+	background-color: gold;
+}
+.bd{
+background-color: green;
+}
+</style>
+
+
+
+<html>
+<head>
+<title>Quiz Application</title>
+</head>
+<body class = "bd">
+<h1 class="top">Fun Quiz</h1>
+	<img class = "joe"src ="https://reason.com/assets/mc/_external/2019_04/-the-drudge-report.jpg"><br>
+Q1. What is the capital city of USA?<br>
+<input type="radio" name="question1" id="correct1">Washington D.C <br>
+<input type="radio" name="question1">New York <br>
+<input type="radio" name="question1">Los Angles <br>
+<input type="radio" name="question1">Chicago <br>
+<input type="radio" name="question1">San Franscisco <br>
+<img class = korea src = "https://www.nknews.org/wp-content/uploads/2020/11/kim-moon-trump-935x500.jpg"><br>
+Q2. Which continent is South Korea Located?<br>
+<input type="radio" name="question2" >Europe <br>
+<input type="radio" name="question2">North America <br>
+<input type="radio" name="question2" id="correct2">Asia <br>
+<input type="radio" name="question2">Africa <br>
+<img class ="share" src = "https://www.memesmonkey.com/images/memesmonkey/27/27adacb5d908206d6e8cb82cf2884f21.jpeg"><br>
+Q3. Which contry is communist?<br>
+<input type="radio" name="question3" >USA <br>
+<input type="radio" name="question3"id="correct3">China <br>
+<input type="radio" name="question3">Russia <br>
+<input type="radio" name="question3">Soviet Union <br>
+
+<input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+ alert("Your score is:"+score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+
+</body>
+<footer class = "gg">MADE BY FUTURE TRILLIONAIRE</footer>
+</html>
